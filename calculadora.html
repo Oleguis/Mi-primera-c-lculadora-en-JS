@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" type="text/javascript" defer></script>
+    <title>Cálculadora</title>
+</head>
+<body onkeydown="getFromKeyboard(event.key)"> <!-- activa funcion que captua del teclado -->
+    <div id="contenedor">
+        <div id='calculadora'>
+            <div id="pantalla">
+                <div id="pantuno" class="display"></div>
+                <div id="pantdos" class="display"></div>
+                <div id="pantres" class="display"></div>
+            </div>
+            <div id='cont-botones'>
+                <button class="btn-numero btn-2" value="reset">C</button>
+                <button id='retroceder' class="btn-numero btn-oparador" value="retro">&larr;</button>
+                <button class="btn-numero">&percnt;</button>
+           
+                <button class="btn-numero">7</button>
+                <button class="btn-numero">8</button>
+                <button class="btn-numero">9</button>
+                <button class="btn-numero btn-oparador" value="/">&divide;</button>
+                <button class="btn-numero">4</button>
+                <button class="btn-numero">5</button>
+                <button class="btn-numero">6</button>
+                <button class="btn-numero btn-oparador" value="*">x</button>
+                <button class="btn-numero">1</button>
+                <button class="btn-numero">2</button>
+                <button class="btn-numero">3</button>
+                <button class="btn-numero btn-oparador" value="-">-</button>
+                <button class="btn-numero">.</button>
+                <button class="btn-numero">0</button>
+                <button id="answer" class="btn-numero btn-oparador" value="Ans">Ans</button>
+                <button class="btn-numero btn-oparador" value="+">+</button>
+                <button class="btn-numero btn-2" value="igual">=</button>
+                <button class="btn-numero">(</button>
+                <button class="btn-numero">)</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
